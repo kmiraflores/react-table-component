@@ -37,8 +37,10 @@ const CustomTable = ({data , headers}) => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'flex-start',
-            width: '1073px',
+            maxWidth: '1073px',
             height: '420px',
+            overflowY: 'auto',
+            overflowX: 'hidden'
         },
     }
 

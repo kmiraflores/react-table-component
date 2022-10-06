@@ -9,7 +9,7 @@ const Row = ({rowData}) => {
             flexDirection: 'row',
             alignItems: 'center',
             borderRadius: '4px 4px 0px 0px',
-            height: '48px',
+            minHeight: '48px',
             width: '1073px',
             borderBottom: '1px solid #EBEBEB',
             background: isHovered ? '#FBFBFB' : '#FFFFFF'
