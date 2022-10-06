@@ -78,8 +78,8 @@ const CustomTable = ({data , headers}) => {
 }
 
 CustomTable.ReactPropTypes ={
-    data: ReactPropTypes.Array,
-    header: ReactPropTypes.Array
+    data: Array,
+    header: Array
 }
 
 export default CustomTable
