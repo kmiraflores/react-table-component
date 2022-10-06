@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import Row from "./Row";
-import { ReactPropTypes } from "react";
 
 const CustomTable = ({data , headers}) => {
     const [tableData, setTableData] = useState(data)
@@ -38,8 +37,6 @@ const CustomTable = ({data , headers}) => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'flex-start',
-            padding: '0px',
-
             width: '1073px',
             height: '420px',
         },

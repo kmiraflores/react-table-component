@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import { ReactPropTypes } from "react";
 
 const Row = ({rowData}) => {
+    const [isHovered, setIsHovered] =  useState(false)
 
     const style = {
         row: {
@@ -12,6 +12,7 @@ const Row = ({rowData}) => {
             height: '48px',
             width: '1073px',
             borderBottom: '1px solid #EBEBEB',
+            background: isHovered ? '#FBFBFB' : '#FFFFFF'
         },
 
         td: {
@@ -27,7 +28,7 @@ const Row = ({rowData}) => {
     }
     
     return (
-                <tr style={style.row}>
+                <tr style={style.row} onMouseOver={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                     <td style={{flexGrow: 1}}></td>
                     <td style={
                         {   
