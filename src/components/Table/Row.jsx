@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { ReactPropTypes } from "react";
 
 const Row = ({rowData}) => {
 
@@ -44,6 +45,10 @@ const Row = ({rowData}) => {
                 </tr>
             )
         
+}
+
+Row.ReactPropTypes = {
+    rowData: Object
 }
 
 export default Row

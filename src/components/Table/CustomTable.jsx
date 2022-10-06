@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Row from "./Row";
+import { ReactPropTypes } from "react";
 
 const CustomTable = ({data , headers}) => {
     const [tableData, setTableData] = useState(data)
@@ -76,4 +77,11 @@ const CustomTable = ({data , headers}) => {
     )
 }
 
+CustomTable.ReactPropTypes ={
+    data: ReactPropTypes.Array,
+    header: ReactPropTypes.Array
+}
+
 export default CustomTable
+
+
